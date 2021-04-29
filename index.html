@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var years = prompt('Сколько вам лет?');
+        var value = years % 100;
+        var num = value % 10;
+
+        if (value > 10 && value < 20) {
+            alert(years + ' лет');
+        } else if (num > 1 && num < 5) {
+            alert(years + ' года');
+        } else if (num == 1) {
+            alert(years + ' год');
+        } else {
+            alert(years + ' лет');
+        }
+    </script>
+</body>
+</html>
